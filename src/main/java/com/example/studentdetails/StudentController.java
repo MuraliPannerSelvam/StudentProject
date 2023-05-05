@@ -18,7 +18,7 @@ public class StudentController {
 	@Autowired
 	StudentService studSer;
 	
-	@PostMapping(value="/addStudent")
+	@PostMapping(value="/addStudentMurali")
 	public String addStudent(@RequestBody Student stud) throws StudentNotFoundAgeException {
 		return studSer.addStudent(stud);
 	}
